@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Henok Daniel Kahsay – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="logo">HDK</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Henok Daniel<br /><span class="accent">Kahsay</span></h1>
+      <p class="hero-tagline">Computer Engineer &amp; Researcher · 5G Networks · ML · Full-Stack</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">GPA 3.73 / 4.0</span>
+        <span class="badge">President's List</span>
+        <span class="badge">IFIP Networking 2025</span>
+        <span class="badge">NYUAD Hackathon Winner</span>
+      </div>
+    </div>
+    <div class="hero-graphic">
+      <div class="avatar-ring">
+        <div class="avatar-initials">HD</div>
+      </div>
+      <div class="floating-pill pill-1">5G Networks</div>
+      <div class="floating-pill pill-2">Machine Learning</div>
+      <div class="floating-pill pill-3">Full-Stack Dev</div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Computer Engineering graduate from <strong>Khalifa University</strong> (Abu Dhabi, UAE) with a cumulative GPA of 3.73/4.0. My work spans 5G network analytics, machine learning, and full-stack development.</p>
+          <p>Currently, I work as a <strong>Research Assistant</strong> building a standards-compliant NWDAF for real-time event-driven analytics in 5G networks—complete with an LLM interface for natural language queries. My research was presented at the <strong>IFIP Networking 2025 Conference</strong> in Limassol, Cyprus.</p>
+          <p>I'm passionate about bridging cutting-edge research with practical software solutions, whether that means training ML models for waste classification, developing tele-operation systems for robots, or winning hackathons.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">3.73</span>
+            <span class="stat-label">GPA / 4.0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">9+</span>
+            <span class="stat-label">GitHub Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Hackathon Awards</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Conference Paper</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Khalifa University</h3>
+              <span class="timeline-date">Dec 2023</span>
+            </div>
+            <p class="timeline-role">B.Sc. in Computer Engineering · Abu Dhabi, UAE</p>
+            <p class="timeline-meta">GPA: 3.73 / 4.0</p>
+            <div class="honors">
+              <span class="honor-tag">President's List ×4</span>
+              <span class="honor-tag">Dean's List ×3</span>
+            </div>
+            <p class="coursework"><strong>Relevant Coursework:</strong> Data Analytics, Computer Networks, Cloud Infrastructure &amp; Services, Machine Learning, Data Structures &amp; Algorithms, Artificial Intelligence, Intro to Software Engineering</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Khalifa University</h3>
+              <span class="timeline-date">Jul 2024 – Present</span>
+            </div>
+            <p class="timeline-role">Research Assistant · Supervisor: Dr. Omar Alhussein</p>
+            <ul class="timeline-bullets">
+              <li>Developed a standards-compliant <strong>NWDAF</strong> compatible with free5gc for real-time event-driven analytics in 5G networks, supporting AMF and SMF event subscriptions.</li>
+              <li>Integrated an <strong>LLM interface</strong> enabling natural language interaction with NWDAF for intent recognition and analytics query automation.</li>
+              <li>Built a custom <strong>Activity-Based Mobility Model (ABMM)</strong> to simulate realistic UE movement and handovers in UERANSIM.</li>
+              <li>Implemented ML models (Gradient Boosting, Random Forest) for predicting UE handovers with high classification accuracy.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Go</span><span class="tag">5G</span><span class="tag">NWDAF</span><span class="tag">LLM</span><span class="tag">ML</span><span class="tag">free5gc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Khalifa University</h3>
+              <span class="timeline-date">Sep 2023 – Dec 2023</span>
+            </div>
+            <p class="timeline-role">Undergraduate Researcher · Dr. Panagiotis Liatsis</p>
+            <ul class="timeline-bullets">
+              <li>Applied masked voltage inputs and ensemble ML models to enhance <strong>Electrical Impedance Tomography</strong> image reconstruction.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">ML</span><span class="tag">EIT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Khalifa University</h3>
+              <span class="timeline-date">Jun 2023 – Jul 2023</span>
+            </div>
+            <p class="timeline-role">Undergraduate Summer Researcher · Dr. Shabir Hassan</p>
+            <ul class="timeline-bullets">
+              <li>Modified a 3D printer into a <strong>3D bioprinter</strong>: designed and printed components, assembled hardware, and edited printer firmware.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">CAD</span><span class="tag">3D Printing</span><span class="tag">Embedded</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>KUCARS</h3>
+              <span class="timeline-date">Jun 2022 – Jul 2022</span>
+            </div>
+            <p class="timeline-role">Software Engineer Intern · Abu Dhabi, UAE</p>
+            <ul class="timeline-bullets">
+              <li>Programmed the front-end and back-end of a <strong>mobile app for remote robot tele-operation</strong>.</li>
+              <li>Developed a tele-operation node interfacing with ROS services running on a physical robot.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Java</span><span class="tag">ROS</span><span class="tag">Mobile Dev</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-card-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/HenokDanielbfg/5g-testbed-conference" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>5G NWDAF Testbed</h3>
+          <p>Standards-compliant Network Data Analytics Function integrated with free5gc for real-time 5G analytics with LLM natural language interface. Published at IFIP Networking 2025.</p>
+          <div class="tag-row">
+            <span class="tag">Go</span><span class="tag">5G</span><span class="tag">LLM</span><span class="tag">free5gc</span>
+          </div>
+          <span class="project-badge">Research · Published</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/HenokDanielbfg/sdp_stb" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Smart Trash Bin</h3>
+          <p>Computer vision system classifying waste into plastic, paper, or metal. Trained on 60,000 images using RESNET, VGG-16, Inception — achieving 92% test accuracy.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">CV</span><span class="tag">Deep Learning</span>
+          </div>
+          <span class="project-badge">Senior Design</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/HenokDanielbfg/SEP" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Family Banking App</h3>
+          <p>Android app built with Flutter for supervised children accounts with monthly allowances and ChatGPT embedded as a financial assistant. Won 2nd place at the 17th IEEE Student Day.</p>
+          <div class="tag-row">
+            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">ChatGPT API</span>
+          </div>
+          <span class="project-badge">IEEE Award</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/HenokDanielbfg/ROS-robot-remote-control" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>ROS Robot Remote Control</h3>
+          <p>Mobile application for remote robot tele-operation with a custom ROS integration node, enabling real-time control of a physical robot from an Android device.</p>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">ROS</span><span class="tag">Android</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/HenokDanielbfg/Machine-Learning-Final-project" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Flower Image Classification</h3>
+          <p>ML final project implementing flower image classification using deep learning techniques, exploring multiple model architectures and training strategies.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Jupyter</span><span class="tag">Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/HenokDanielbfg/cgm-website" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Football Academy Website</h3>
+          <p>Full website built for 7Mania Football Academy in Abu Dhabi — a minor league football organization needing an online presence for registration and scheduling.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/HenokDanielbfg" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Flight Booking System</h3>
+          <p>Java desktop application for Windows with dual user roles (manager &amp; customer). Features include flight selection, seat booking, mileage credits, and customer support.</p>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">Desktop App</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="project-links">
+              <a href="https://github.com/HenokDanielbfg/Security-System---Arduino-" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Arduino Security System</h3>
+          <p>Hardware security system built on Arduino featuring sensors and automated responses for intrusion detection and alerts.</p>
+          <div class="tag-row">
+            <span class="tag">C++</span><span class="tag">Arduino</span><span class="tag">Embedded</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Go</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">C</span>
+            <span class="skill-pill">Dart</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">MATLAB</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks &amp; Tools</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">Flutter</span>
+            <span class="skill-pill">ROS</span>
+            <span class="skill-pill">OpenCV</span>
+            <span class="skill-pill">free5gc</span>
+            <span class="skill-pill">UERANSIM</span>
+            <span class="skill-pill">Android Studio</span>
+            <span class="skill-pill">Grafana</span>
+            <span class="skill-pill">Prometheus</span>
+            <span class="skill-pill">Unity</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>ML / AI</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Scikit-learn</span>
+            <span class="skill-pill">TensorFlow / Keras</span>
+            <span class="skill-pill">Random Forest</span>
+            <span class="skill-pill">Gradient Boosting</span>
+            <span class="skill-pill">ResNet / VGG</span>
+            <span class="skill-pill">LLM Integration</span>
+            <span class="skill-pill">Computer Vision</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Certifications</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">CS50 (edX)</span>
+            <span class="skill-pill">Web Dev (Coursera)</span>
+            <span class="skill-pill">ML Onramp (MathWorks)</span>
+            <span class="skill-pill">QWorld QC Silver</span>
+            <span class="skill-pill">Public Speaking (LinkedIn)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="container">
+      <h2 class="section-title">Publications &amp; Achievements</h2>
+      <div class="achievements-grid">
+
+        <div class="achievement-card pub">
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <span class="achievement-label">Publication · May 2025</span>
+            <h3>Enhanced Open-Source NWDAF for Event-Driven Analytics in 5G Networks</h3>
+            <p>Henok Daniel, Omar Alhussein — Presented at <strong>IFIP Networking 2025 Conference</strong>, Limassol, Cyprus</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon trophy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+          </div>
+          <div>
+            <span class="achievement-label">Award · April 2023</span>
+            <h3>11th Annual NYUAD Hackathon for Social Good</h3>
+            <p>Won 1st place competing against teams from across the region.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon trophy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+          </div>
+          <div>
+            <span class="achievement-label">Award · April 2023</span>
+            <h3>2nd Place — 17th IEEE Student Day</h3>
+            <p>Software Engineering Project: Family Banking App with ChatGPT integration.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon trophy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+          </div>
+          <div>
+            <span class="achievement-label">Award · November 2023</span>
+            <h3>Khalifa University Programming Contest Winner</h3>
+            <p>Won the annual KU competitive programming contest.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div>
+            <span class="achievement-label">Event · October 2023</span>
+            <h3>GESDA Summit 2023 — Geneva, Switzerland</h3>
+            <p>Presented a quantum-based Topological Data Analysis solution to power blackouts. Selected out of 200+ participants at a NYUAD competition.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <span class="achievement-label">Recognition · 2020–2024</span>
+            <h3>Golden Key International Honor Society</h3>
+            <p>Membership granted based on consistent academic excellence. KU Honor Awards received in 2020, 2021, 2023, and 2024.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">I'm open to research collaborations, full-time roles, and interesting projects.</p>
+      <div class="contact-links">
+        <a href="mailto:henokdaniel678@gmail.com" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>henokdaniel678@gmail.com</span>
+        </a>
+        <a href="tel:+971524930256" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.91-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+971 52 493 0256</span>
+        </a>
+        <a href="https://github.com/HenokDanielbfg" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>github.com/HenokDanielbfg</span>
+        </a>
+        <a href="https://www.linkedin.com/in/henok-daniel" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Built by Henok Daniel Kahsay · Abu Dhabi, UAE · 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
